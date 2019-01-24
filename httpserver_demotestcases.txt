@@ -1,0 +1,50 @@
+=====================Http Server Library Implementation=========================
+
+:: SERVER ::
+httpfs.exe -p 80 -v -n
+
+:: CLIENT ::
+httpc get "httpc get http://127.0.0.1/
+
+httpc get -v -h Content-Type:application/json -h Accept:text/plain http://127.0.0.1/
+
+httpc post -h Content-Type:application/json --d "{"Assignment": 1}" http://127.0.0.1/post
+
+httpc post -h Content-Type:application/json -h Accept:text/plain -f test.json http://127.0.0.1/post -o test.txt
+
+=====================Http File Server Implementation=========================
+
+:: SERVER ::
+
+httpfs.exe -p 80 -v -n
+
+:: CLIENT ::
+
+==================================== GET &CONTENT-DISPOSITION ===================================================
+
+httpc get -h Content-Type:application/json http://127.0.0.1/
+
+httpc get -h Content-Type:application/json http://127.0.0.1/test1.txt
+
+==================================== SECURITY ====================================
+
+httpc get -h Content-Type:application/json http://127.0.0.1/TEST/test1.txt
+
+=================================== CONTENT-TYPE ===================================
+
+httpc get -v -h Content-Type:application/json http://127.0.0.1/test1.txt
+
+=================================== POST & OVERWRITE ===================================
+
+httpc post -v --d "{Assignment:2}" "http://127.0.0.1/test2.txt"
+
+httpc post -v -h Accept:text/plain -f test.json "http://127.0.0.1/test2.txt"
+
+httpc post -v -h Accept:text/plain -f test.json "http://127.0.0.1/test3.txt"
+
+
+Run 3 bat files
+
+
+
+

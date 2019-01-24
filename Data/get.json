@@ -1,0 +1,11 @@
+{
+  "args": {},
+  "headers": {
+    "Connection": "close",
+    "Content-Type": "application/json",
+    "Host": "127.0.0.1",
+    "User-Agent": "Concordia-HTTP/1.0"
+  },
+  "origin": "127.0.0.1",
+  "url": "http://127.0.0.1/"
+}

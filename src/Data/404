@@ -1,0 +1,1 @@
+POST //404 httpc post -v --d {Assignment:1} http://127.0.0.1/test2.txt HTTP/1.0

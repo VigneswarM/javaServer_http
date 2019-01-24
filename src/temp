@@ -1,0 +1,19 @@
+{
+  "args": {},
+  "headers": {
+    "Connection": "close",
+    "User-Agent": "Concordia-HTTP/1.0",
+    "Host": "localhost",
+    "Content-Length": "16",
+    "Content-Type":"application/json"
+    "Accept":"text/plain"
+    "Accept":"text/plain"
+    "Accept":"application/json"
+  },
+  "data": "{\"Assignment\":1}",
+  "form": {},
+  "origin": "127.0.0.1",
+  "files": {},
+  "json": "{\"Assignment\":1}",
+  "url": "http://127.0.0.1/post"
+}
